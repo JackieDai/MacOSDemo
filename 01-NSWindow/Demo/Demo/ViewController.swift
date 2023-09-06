@@ -47,7 +47,7 @@ extension ViewController {
         myWindow.makeKeyAndOrderFront(self)
         myWindow.center()
         
-        let windowCtrl = myWindow.windowController
+//        let windowCtrl = myWindow.windowController
         
         addButtonToTitleBar()
         
