@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C547EA42AA83FD9004A8C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C547EA32AA83FD9004A8C5B /* AppDelegate.swift */; };
+		2C547EA62AA83FD9004A8C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C547EA52AA83FD9004A8C5B /* ViewController.swift */; };
+		2C547EA82AA83FDD004A8C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C547EA72AA83FDD004A8C5B /* Assets.xcassets */; };
+		2C547EAB2AA83FDD004A8C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C547EA92AA83FDD004A8C5B /* Main.storyboard */; };
+		2C547EB32AA8418B004A8C5B /* MySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C547EB22AA8418B004A8C5B /* MySplitViewController.swift */; };
+		2C547EB52AA841D2004A8C5B /* PrimaryVireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C547EB42AA841D2004A8C5B /* PrimaryVireController.swift */; };
+		2C547EB72AA841E1004A8C5B /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C547EB62AA841E1004A8C5B /* SecondaryViewController.swift */; };
+		CC641F3A24B03A661526C9BE /* Pods_02_WindowAndSplit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40C63612C01258B7C4EEDA2 /* Pods_02_WindowAndSplit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C547EA02AA83FD9004A8C5B /* 02-WindowAndSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-WindowAndSplit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C547EA32AA83FD9004A8C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C547EA52AA83FD9004A8C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C547EA72AA83FDD004A8C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C547EAA2AA83FDD004A8C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C547EAC2AA83FDD004A8C5B /* _2_WindowAndSplit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _2_WindowAndSplit.entitlements; sourceTree = "<group>"; };
+		2C547EB22AA8418B004A8C5B /* MySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySplitViewController.swift; sourceTree = "<group>"; };
+		2C547EB42AA841D2004A8C5B /* PrimaryVireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryVireController.swift; sourceTree = "<group>"; };
+		2C547EB62AA841E1004A8C5B /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		9CF3B76395495C5DDF9B47C5 /* Pods-02-WindowAndSplit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-WindowAndSplit.release.xcconfig"; path = "Target Support Files/Pods-02-WindowAndSplit/Pods-02-WindowAndSplit.release.xcconfig"; sourceTree = "<group>"; };
+		D40C63612C01258B7C4EEDA2 /* Pods_02_WindowAndSplit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_02_WindowAndSplit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5248EF881D3255F4CB5B40 /* Pods-02-WindowAndSplit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-02-WindowAndSplit.debug.xcconfig"; path = "Target Support Files/Pods-02-WindowAndSplit/Pods-02-WindowAndSplit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C547E9D2AA83FD9004A8C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC641F3A24B03A661526C9BE /* Pods_02_WindowAndSplit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C547E972AA83FD9004A8C5B = {
+			isa = PBXGroup;
+			children = (
+				2C547EA22AA83FD9004A8C5B /* 02-WindowAndSplit */,
+				2C547EA12AA83FD9004A8C5B /* Products */,
+				3ACAD8D6CD2CC817E3AF402C /* Pods */,
+				FE6D45CAAE5E28DEFC676BF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C547EA12AA83FD9004A8C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C547EA02AA83FD9004A8C5B /* 02-WindowAndSplit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C547EA22AA83FD9004A8C5B /* 02-WindowAndSplit */ = {
+			isa = PBXGroup;
+			children = (
+				2C547EA32AA83FD9004A8C5B /* AppDelegate.swift */,
+				2C547EA52AA83FD9004A8C5B /* ViewController.swift */,
+				2C547EB22AA8418B004A8C5B /* MySplitViewController.swift */,
+				2C547EB42AA841D2004A8C5B /* PrimaryVireController.swift */,
+				2C547EB62AA841E1004A8C5B /* SecondaryViewController.swift */,
+				2C547EA72AA83FDD004A8C5B /* Assets.xcassets */,
+				2C547EA92AA83FDD004A8C5B /* Main.storyboard */,
+				2C547EAC2AA83FDD004A8C5B /* _2_WindowAndSplit.entitlements */,
+			);
+			path = "02-WindowAndSplit";
+			sourceTree = "<group>";
+		};
+		3ACAD8D6CD2CC817E3AF402C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC5248EF881D3255F4CB5B40 /* Pods-02-WindowAndSplit.debug.xcconfig */,
+				9CF3B76395495C5DDF9B47C5 /* Pods-02-WindowAndSplit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE6D45CAAE5E28DEFC676BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D40C63612C01258B7C4EEDA2 /* Pods_02_WindowAndSplit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C547E9F2AA83FD9004A8C5B /* 02-WindowAndSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C547EAF2AA83FDD004A8C5B /* Build configuration list for PBXNativeTarget "02-WindowAndSplit" */;
+			buildPhases = (
+				B6D7BE8F39DA70AE13AA9111 /* [CP] Check Pods Manifest.lock */,
+				2C547E9C2AA83FD9004A8C5B /* Sources */,
+				2C547E9D2AA83FD9004A8C5B /* Frameworks */,
+				2C547E9E2AA83FD9004A8C5B /* Resources */,
+				B9F3A02B16DC436A9DC6917B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-WindowAndSplit";
+			productName = "02-WindowAndSplit";
+			productReference = 2C547EA02AA83FD9004A8C5B /* 02-WindowAndSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C547E982AA83FD9004A8C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2C547E9F2AA83FD9004A8C5B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2C547E9B2AA83FD9004A8C5B /* Build configuration list for PBXProject "02-WindowAndSplit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C547E972AA83FD9004A8C5B;
+			productRefGroup = 2C547EA12AA83FD9004A8C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C547E9F2AA83FD9004A8C5B /* 02-WindowAndSplit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C547E9E2AA83FD9004A8C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C547EA82AA83FDD004A8C5B /* Assets.xcassets in Resources */,
+				2C547EAB2AA83FDD004A8C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6D7BE8F39DA70AE13AA9111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-02-WindowAndSplit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F3A02B16DC436A9DC6917B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-02-WindowAndSplit/Pods-02-WindowAndSplit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-02-WindowAndSplit/Pods-02-WindowAndSplit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-02-WindowAndSplit/Pods-02-WindowAndSplit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C547E9C2AA83FD9004A8C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C547EB52AA841D2004A8C5B /* PrimaryVireController.swift in Sources */,
+				2C547EA62AA83FD9004A8C5B /* ViewController.swift in Sources */,
+				2C547EA42AA83FD9004A8C5B /* AppDelegate.swift in Sources */,
+				2C547EB32AA8418B004A8C5B /* MySplitViewController.swift in Sources */,
+				2C547EB72AA841E1004A8C5B /* SecondaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C547EA92AA83FDD004A8C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C547EAA2AA83FDD004A8C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C547EAD2AA83FDD004A8C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C547EAE2AA83FDD004A8C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2C547EB02AA83FDD004A8C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5248EF881D3255F4CB5B40 /* Pods-02-WindowAndSplit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "02-WindowAndSplit/_2_WindowAndSplit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lingxiao.-2-WindowAndSplit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C547EB12AA83FDD004A8C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF3B76395495C5DDF9B47C5 /* Pods-02-WindowAndSplit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "02-WindowAndSplit/_2_WindowAndSplit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lingxiao.-2-WindowAndSplit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C547E9B2AA83FD9004A8C5B /* Build configuration list for PBXProject "02-WindowAndSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C547EAD2AA83FDD004A8C5B /* Debug */,
+				2C547EAE2AA83FDD004A8C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C547EAF2AA83FDD004A8C5B /* Build configuration list for PBXNativeTarget "02-WindowAndSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C547EB02AA83FDD004A8C5B /* Debug */,
+				2C547EB12AA83FDD004A8C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C547E982AA83FD9004A8C5B /* Project object */;
+}
