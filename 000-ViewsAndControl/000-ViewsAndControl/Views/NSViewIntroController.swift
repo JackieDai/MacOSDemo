@@ -10,12 +10,8 @@ import Cocoa
  if you want to set view backgroundColor, should set `view.wantsLayer == true`
  */
 
-class NSViewIntroController: NSViewController {
-    override func loadView() {
-
-        view = MyView()
-        
-    }
+class NSViewIntroController: BaseViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
