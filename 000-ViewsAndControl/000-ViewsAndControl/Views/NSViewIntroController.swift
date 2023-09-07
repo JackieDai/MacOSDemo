@@ -6,16 +6,15 @@
 //
 
 import Cocoa
+/*
+ if you want to set view backgroundColor, should set `view.wantsLayer == true`
+ */
 
 class NSViewIntroController: NSViewController {
     override func loadView() {
-        let rect: CGRect = .init(x: 0, y: 0, width: windowWidth, height: windowHeight)
 
-        view = NSView(frame: rect)
-        /*
-         wantsLayer: A Boolean value indicating whether the view uses a layer as its backing store.
-         */
-        view.wantsLayer = true
+        view = MyView()
+        
     }
 
     override func viewDidLoad() {
@@ -26,9 +25,12 @@ class NSViewIntroController: NSViewController {
         view.addSubview(label)
         label.textColor = .blue
         label.wantsLayer = true
-        label.backgroundColor = .red
-        label.frame = view.bounds
+        label.layer?.backgroundColor = NSColor.red.cgColor
+        label.frame = .init(x: 100, y: 100, width: 300, height: 100)
+        
+        view.layer?.backgroundColor = NSColor.cyan.cgColor
         
     }
+    
     
 }

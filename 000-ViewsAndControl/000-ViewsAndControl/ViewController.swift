@@ -25,7 +25,7 @@ class ViewController: NSViewController {
         let vc = NSViewIntroController()
         let windowCtrl = MyWindowController(contentViewController: vc, windowTitle: "NSView Introductions")
         windowCtrl.showWindow(self)
-//        windowCtrl.window?.center()
+        windowCtrl.window?.center()
 //        windowCtrl.window?.orderFront(nil)
     }
     

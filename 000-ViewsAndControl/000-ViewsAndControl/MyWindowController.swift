@@ -34,3 +34,19 @@ class MyWindowController: NSWindowController {
     }
 
 }
+
+
+class MyView: NSView {
+    convenience init() {
+        let rect: CGRect = .init(x: 0, y: 0, width: windowWidth, height: windowHeight)
+
+        self.init(frame: rect)
+        
+        /*
+         wantsLayer: A Boolean value indicating whether the view uses a layer as its backing store.
+         */
+        self.wantsLayer = true
+    }
+    
+    override var isFlipped: Bool { true }
+}
