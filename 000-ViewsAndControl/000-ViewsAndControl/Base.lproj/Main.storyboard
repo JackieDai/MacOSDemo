@@ -720,7 +720,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="xDc-hX-1lo">
-                                <rect key="frame" x="112" y="201" width="76" height="32"/>
+                                <rect key="frame" x="122" y="201" width="76" height="32"/>
                                 <buttonCell key="cell" type="push" title="NSCell" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Ws-yf-dky">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -729,14 +729,27 @@
                                     <action selector="handleAction:" target="XfG-lQ-9wD" id="aqd-8k-j1A"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="gqR-J4-w4w">
+                                <rect key="frame" x="204" y="201" width="108" height="32"/>
+                                <buttonCell key="cell" type="push" title="NSGridView" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gl3-47-zdR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="handleAction:" target="XfG-lQ-9wD" id="w5X-yf-EXC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xDc-hX-1lo" firstAttribute="centerY" secondItem="VDu-XI-0Rg" secondAttribute="centerY" id="IVn-zF-uTp"/>
-                            <constraint firstItem="xDc-hX-1lo" firstAttribute="leading" secondItem="VDu-XI-0Rg" secondAttribute="trailing" constant="10" id="adz-NL-gG1"/>
+                            <constraint firstItem="gqR-J4-w4w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xDc-hX-1lo" secondAttribute="trailing" constant="12" symbolic="YES" id="TDQ-Z8-Rig"/>
+                            <constraint firstAttribute="trailing" secondItem="gqR-J4-w4w" secondAttribute="trailing" constant="175" id="aBA-7D-o2D"/>
+                            <constraint firstItem="xDc-hX-1lo" firstAttribute="leading" secondItem="VDu-XI-0Rg" secondAttribute="trailing" constant="20" id="adz-NL-gG1"/>
                             <constraint firstItem="xDc-hX-1lo" firstAttribute="height" secondItem="VDu-XI-0Rg" secondAttribute="height" id="apV-T2-X4d"/>
                             <constraint firstItem="VDu-XI-0Rg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="42" id="cnd-Ft-62f"/>
                             <constraint firstItem="xDc-hX-1lo" firstAttribute="width" secondItem="VDu-XI-0Rg" secondAttribute="width" multiplier="0.911765" id="dCb-NB-hK1"/>
                             <constraint firstItem="VDu-XI-0Rg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="41" id="rHs-xm-a83"/>
+                            <constraint firstItem="gqR-J4-w4w" firstAttribute="centerY" secondItem="xDc-hX-1lo" secondAttribute="centerY" id="rey-Bk-1mG"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VDu-XI-0Rg" secondAttribute="trailing" constant="42" id="zJB-O9-mto"/>
                         </constraints>
                     </view>

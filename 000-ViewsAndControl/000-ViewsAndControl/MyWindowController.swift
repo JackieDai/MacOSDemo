@@ -7,8 +7,8 @@
 
 import Cocoa
 
-let windowWidth: CGFloat = CGDisplayBounds(CGMainDisplayID()).width - 200
-let windowHeight: CGFloat = CGDisplayBounds(CGMainDisplayID()).width - 100
+let windowWidth: CGFloat = (CGDisplayBounds(CGMainDisplayID()).width - 200) * 0.618
+let windowHeight: CGFloat = (CGDisplayBounds(CGMainDisplayID()).height - 100) * 0.618
 
 class MyWindowController: NSWindowController {
     convenience init(contentViewController: NSViewController, windowTitle: String) {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C1B69F62AA97EA8006C6284 /* NSCellIntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B69F52AA97EA8006C6284 /* NSCellIntroController.swift */; };
 		2C1B69F82AA97EC0006C6284 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B69F72AA97EC0006C6284 /* BaseViewController.swift */; };
+		2C1B69FC2AA99B9C006C6284 /* NSGridViewIntroCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B69FB2AA99B9C006C6284 /* NSGridViewIntroCtrl.swift */; };
 		2C662BB82AA9712400733192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C662BB72AA9712400733192 /* AppDelegate.swift */; };
 		2C662BBA2AA9712400733192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C662BB92AA9712400733192 /* ViewController.swift */; };
 		2C662BBC2AA9712600733192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C662BBB2AA9712600733192 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 		0F2AE28AFF1036554432AD77 /* Pods-000-ViewsAndControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-000-ViewsAndControl.release.xcconfig"; path = "Target Support Files/Pods-000-ViewsAndControl/Pods-000-ViewsAndControl.release.xcconfig"; sourceTree = "<group>"; };
 		2C1B69F52AA97EA8006C6284 /* NSCellIntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCellIntroController.swift; sourceTree = "<group>"; };
 		2C1B69F72AA97EC0006C6284 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2C1B69FA2AA99704006C6284 /* NSCell Introduction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "NSCell Introduction.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2C1B69FB2AA99B9C006C6284 /* NSGridViewIntroCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSGridViewIntroCtrl.swift; sourceTree = "<group>"; };
 		2C662BB42AA9712400733192 /* 000-ViewsAndControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "000-ViewsAndControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C662BB72AA9712400733192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C662BB92AA9712400733192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 			children = (
 				2C662BCC2AA9727300733192 /* NSViewIntroController.swift */,
 				2C1B69F52AA97EA8006C6284 /* NSCellIntroController.swift */,
+				2C1B69FA2AA99704006C6284 /* NSCell Introduction.playground */,
+				2C1B69FB2AA99B9C006C6284 /* NSGridViewIntroCtrl.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,7 +107,6 @@
 				D9DED06D2C9EE9A47ED69C40 /* Pods-000-ViewsAndControl.debug.xcconfig */,
 				0F2AE28AFF1036554432AD77 /* Pods-000-ViewsAndControl.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -220,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1B69FC2AA99B9C006C6284 /* NSGridViewIntroCtrl.swift in Sources */,
 				2C662BCA2AA9723900733192 /* MyWindowController.swift in Sources */,
 				2C662BBA2AA9712400733192 /* ViewController.swift in Sources */,
 				2C662BCD2AA9727300733192 /* NSViewIntroController.swift in Sources */,

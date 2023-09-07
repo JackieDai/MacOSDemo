@@ -31,6 +31,9 @@ class ViewController: NSViewController {
         case 1:
             vc = NSCellIntroController()
             title = "NSCell Introductions"
+        case 2:
+            vc = NSGridViewIntroCtrl()
+            title = "NSGridView"
         default:
             return
         }
