@@ -22,8 +22,20 @@ class ViewController: NSViewController {
     }
 
     @IBAction func handleAction(_ sender: NSButton) {
-        let vc = NSViewIntroController()
-        let windowCtrl = MyWindowController(contentViewController: vc, windowTitle: "NSView Introductions")
+        let vc: NSViewController
+        let title: String
+        switch sender.tag {
+        case 0:
+            vc = NSViewIntroController()
+            title = "NSView Introductions"
+        case 1:
+            vc = NSCellIntroController()
+            title = "NSCell Introductions"
+        default:
+            return
+        }
+        
+        let windowCtrl = MyWindowController(contentViewController: vc, windowTitle: title)
         windowCtrl.showWindow(self)
         windowCtrl.window?.center()
 //        windowCtrl.window?.orderFront(nil)
@@ -31,3 +43,9 @@ class ViewController: NSViewController {
     
 }
 
+
+extension ViewController {
+    func introNSView() {
+        
+    }
+}
