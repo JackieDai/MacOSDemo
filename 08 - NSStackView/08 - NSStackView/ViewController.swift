@@ -42,6 +42,7 @@ class ViewController: NSViewController {
     }
     
     func layoutStackV() {
+        view.addSubview(stackV)
         stackV.snp.makeConstraints { make in
             make.left.top.equalTo(40)
             make.right.bottom.equalTo(-40)
@@ -57,18 +58,37 @@ extension ViewController {
         
         stackV = NSStackView()
         
-        view.addSubview(stackV)
         
         
     }
     
     func initialzeOneTwo() {
+        
+        let v1 = NSView()
+        let v2 = NSView()
+        v1.wantsLayer = true
+        v2.wantsLayer = true
+        
+        v1.layer?.backgroundColor = NSColor.yellow.cgColor
+        v2.layer?.backgroundColor = NSColor.blue.cgColor
+        
         let views: [NSView] = [
-            .init(frame: .init(origin: .zero, size: .init(width: 100, height: 100))),
-            .init(frame: .init(origin: .zero, size: .init(width: 50, height: 50))),
+            v1,
+            v2,
         ]
         
         stackV = .init(views: views)
+     
+        
+        v1.snp.makeConstraints { make in
+            make.width.equalTo(100)
+        }
+        
+        v2.snp.makeConstraints { make in
+            make.width.equalTo(200)
+        }
+        
+        
     }
 }
 
