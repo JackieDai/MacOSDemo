@@ -11,6 +11,9 @@
 		2C4384782AAB0C7E00F6C85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4384772AAB0C7E00F6C85C /* ViewController.swift */; };
 		2C43847A2AAB0C8000F6C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4384792AAB0C8000F6C85C /* Assets.xcassets */; };
 		2C43847D2AAB0C8000F6C85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C43847B2AAB0C8000F6C85C /* Main.storyboard */; };
+		2CE026922AAC0B5C00496463 /* CodeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE026902AAC0B5C00496463 /* CodeListController.swift */; };
+		2CE026962AAC0B6E00496463 /* CodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE026942AAC0B6E00496463 /* CodeWindowController.swift */; };
+		2CE026972AAC0B6E00496463 /* CodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE026952AAC0B6E00496463 /* CodeWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		2C4384792AAB0C8000F6C85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C43847C2AAB0C8000F6C85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C43847E2AAB0C8000F6C85C /* _9___NSTableView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "_9___NSTableView.entitlements"; sourceTree = "<group>"; };
+		2CE026902AAC0B5C00496463 /* CodeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeListController.swift; sourceTree = "<group>"; };
+		2CE026942AAC0B6E00496463 /* CodeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeWindowController.swift; sourceTree = "<group>"; };
+		2CE026952AAC0B6E00496463 /* CodeWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,30 @@
 			children = (
 				2C4384752AAB0C7E00F6C85C /* AppDelegate.swift */,
 				2C4384772AAB0C7E00F6C85C /* ViewController.swift */,
+				2CE026852AAC0A3D00496463 /* XibTableView */,
+				2CE026842AAC0A3000496463 /* CodeTableView */,
 				2C4384792AAB0C8000F6C85C /* Assets.xcassets */,
 				2C43847B2AAB0C8000F6C85C /* Main.storyboard */,
 				2C43847E2AAB0C8000F6C85C /* _9___NSTableView.entitlements */,
 			);
 			path = "09 - NSTableView";
+			sourceTree = "<group>";
+		};
+		2CE026842AAC0A3000496463 /* CodeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2CE026902AAC0B5C00496463 /* CodeListController.swift */,
+				2CE026942AAC0B6E00496463 /* CodeWindowController.swift */,
+				2CE026952AAC0B6E00496463 /* CodeWindowController.xib */,
+			);
+			path = CodeTableView;
+			sourceTree = "<group>";
+		};
+		2CE026852AAC0A3D00496463 /* XibTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XibTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE026972AAC0B6E00496463 /* CodeWindowController.xib in Resources */,
 				2C43847A2AAB0C8000F6C85C /* Assets.xcassets in Resources */,
 				2C43847D2AAB0C8000F6C85C /* Main.storyboard in Resources */,
 			);
@@ -131,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE026962AAC0B6E00496463 /* CodeWindowController.swift in Sources */,
 				2C4384782AAB0C7E00F6C85C /* ViewController.swift in Sources */,
 				2C4384762AAB0C7E00F6C85C /* AppDelegate.swift in Sources */,
+				2CE026922AAC0B5C00496463 /* CodeListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

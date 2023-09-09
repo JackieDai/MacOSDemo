@@ -15,10 +15,10 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         
-        let view = NSTableView(frame: .init(x: 10, y: 10, width: 300, height: 100))
-        view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor.red.cgColor
-        self.view.addSubview(view)
+//        let view = NSTableView(frame: .init(x: 10, y: 10, width: 300, height: 100))
+//        view.wantsLayer = true
+//        view.layer?.backgroundColor = NSColor.red.cgColor
+//        self.view.addSubview(view)
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +27,12 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    @IBAction func handleCodeTable(_ sender: Any) {
+        
+        let windowCtrl = CodeWindowController()
+        windowCtrl.showWindow(self)
+    }
+    
 
 }
 
