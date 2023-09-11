@@ -13,6 +13,8 @@ import Cocoa
  https://www.jianshu.com/p/50f77e8eccf5
  
  https://www.jianshu.com/c/299375a4887f
+ 
+
  */
 
 class CodeListController: NSViewController {
@@ -88,16 +90,114 @@ extension CodeListController: NSTableViewDelegate {
     }
 }
 
-extension CodeListController: NSTableViewDataSource {
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+extension CodeListController: NSTableViewDataSource {}
+
+// MARK: - Cell Based 的 NSTableView
+extension CodeListController {
+//    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+//        var rowStr = ""
+//        if tableColumn?.identifier == .init(rawValue: "test1") {
+//            rowStr += "第1列,"
+//        } else if tableColumn?.identifier == .init(rawValue: "test2") {
+//            rowStr += "第2列,"
+//        }
+//        rowStr += (dataSource[row] as! String)
+//        return rowStr
+//    }
+//
+//
+//    //cell-base的cell展示前调用 可以进行自定制
+//    func tableView(_ tableView: NSTableView, willDisplayCell cell: Any, for tableColumn: NSTableColumn?, row: Int) {
+//        let tmpCell = cell as! NSTextFieldCell
+//        tmpCell.textColor = NSColor.red
+//    }
+    
+    //    func tableView(_ tableView: NSTableView, dataCellFor tableColumn: NSTableColumn?, row: Int) -> NSCell? {
+    //        <#code#>
+    //    }
+}
+
+// MARK: - View Based 的 NSTableView
+extension CodeListController {
+    //View-base
+    //设置某个元素的具体视图
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        let key = tableColumn?.identifier
+        //根据ID取视图
+        var view = tableView.makeView(withIdentifier: .init(rawValue: "cellId"), owner: self)
+        if (view==nil) {
+            view = NSTextField()
+            (view as! NSTextField).isBordered=false
+            (view as! NSTextField).isEditable=false
+            (view as! NSTextField).backgroundColor = NSColor.clear
+            (view as! NSTextField).identifier = .init(rawValue: "cellId");
+        }
+        
         var rowStr = ""
-        if tableColumn?.identifier == .init(rawValue: "test1") {
+        if key == .init(rawValue: "test1") {
             rowStr += "第1列,"
-        } else if tableColumn?.identifier == .init(rawValue: "test1") {
+        } else if key == .init(rawValue: "test2") {
             rowStr += "第2列,"
         }
         rowStr += (dataSource[row] as! String)
-        return rowStr
+        
+        
+        (view as! NSTextField).stringValue = rowStr
+        return view;
     }
+    
+    
+    //设置每行容器视图
+    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+        let tableRowView = TableRow()
+        let lineView = NSView()
+        lineView.wantsLayer = true
+        lineView.layer?.backgroundColor = NSColor.blue.cgColor
+        tableRowView.addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalTo(0)
+            make.height.equalTo(1)
+        }
+        return tableRowView
+    }
+    //当添加行时调用的回调
+    func tableView(_ tableView: NSTableView, didAdd rowView: NSTableRowView, forRow row: Int) {
+        print("addRow")
+    }
+    //当移除行时调用的回调
+    func tableView(_ tableView: NSTableView, didRemove rowView: NSTableRowView, forRow row: Int) {
+        print("removeRow")
+    }
+}
 
+
+class TableRow: NSTableRowView {
+    
+    override init(frame frameRect: NSRect) {
+        super.init(frame: frameRect)
+        
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    //绘制选中状态的背景
+    override func drawSelection(in dirtyRect: NSRect) {
+        let selectionRect = NSInsetRect(self.bounds, 5.0, 5.0)
+        NSColor.init(calibratedWhite: 72, alpha: 0.6).setStroke()
+        NSColor.init(calibratedWhite: 82, alpha: 0.6).setFill()
+        let selectionPath = NSBezierPath.init(roundedRect: selectionRect, xRadius: 10, yRadius: 10)
+        selectionPath.fill()
+        selectionPath.stroke()
+    }
+    //绘制背景
+    override func drawBackground(in dirtyRect: NSRect) {
+        super.drawBackground(in: dirtyRect)
+        NSColor.green.setFill()
+        
+//        NSRectFill(dirtyRect)
+        let path = NSBezierPath(rect: dirtyRect)
+        path.fill()
+    }
+    
 }
