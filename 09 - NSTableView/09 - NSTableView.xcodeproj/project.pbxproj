@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3106CD2AAE96E00005110E /* XibListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3106CB2AAE96E00005110E /* XibListController.swift */; };
+		2C3106CE2AAE96E00005110E /* XibListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3106CC2AAE96E00005110E /* XibListController.xib */; };
 		2C4384762AAB0C7E00F6C85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4384752AAB0C7E00F6C85C /* AppDelegate.swift */; };
 		2C4384782AAB0C7E00F6C85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4384772AAB0C7E00F6C85C /* ViewController.swift */; };
 		2C43847A2AAB0C8000F6C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4384792AAB0C8000F6C85C /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3106CB2AAE96E00005110E /* XibListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibListController.swift; sourceTree = "<group>"; };
+		2C3106CC2AAE96E00005110E /* XibListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibListController.xib; sourceTree = "<group>"; };
 		2C4384722AAB0C7E00F6C85C /* 09 - NSTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09 - NSTableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4384752AAB0C7E00F6C85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4384772AAB0C7E00F6C85C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 		2CE026852AAC0A3D00496463 /* XibTableView */ = {
 			isa = PBXGroup;
 			children = (
+				2C3106CB2AAE96E00005110E /* XibListController.swift */,
+				2C3106CC2AAE96E00005110E /* XibListController.xib */,
 			);
 			path = XibTableView;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				2CE026C22AAC1FCE00496463 /* README.md in Resources */,
 				2CE026C12AAC1FCE00496463 /* LICENSE in Resources */,
 				2C43847D2AAB0C8000F6C85C /* Main.storyboard in Resources */,
+				2C3106CE2AAE96E00005110E /* XibListController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +346,7 @@
 				2CE026D52AAC1FCE00496463 /* ConstraintLayoutGuide.swift in Sources */,
 				2CE026D22AAC1FCE00496463 /* ConstraintConfig.swift in Sources */,
 				2CE026E32AAC1FCE00496463 /* LayoutConstraint.swift in Sources */,
+				2C3106CD2AAE96E00005110E /* XibListController.swift in Sources */,
 				2CE026CC2AAC1FCE00496463 /* ConstraintDSL.swift in Sources */,
 				2CE026D82AAC1FCE00496463 /* ConstraintConstantTarget.swift in Sources */,
 				2CE026D02AAC1FCE00496463 /* ConstraintDirectionalInsetTarget.swift in Sources */,

@@ -30,9 +30,15 @@ class ViewController: NSViewController {
     @IBAction func handleCodeTable(_ sender: Any) {
         
         let windowCtrl = CodeWindowController()
+        windowCtrl.contentViewController = CodeListController()
         windowCtrl.showWindow(self)
     }
     
 
+    @IBAction func handleXibTable(_ sender: Any) {
+        let windowCtrl = CodeWindowController()
+        windowCtrl.contentViewController = XibListController()
+        windowCtrl.showWindow(self)
+    }
 }
 
